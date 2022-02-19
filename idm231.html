@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanrio Zodiac Generator</title>
+    <!--<link rel= "stylesheet" href="style.css"/>-->
+    <link rel= "normalize" href="normalize.css"/>
+</head>
+<body>
+    <nav>
+        <img src="pictures/logo.png" alt="Sanrio Logo" class="logo" width="160" height="50"> 
+    </nav>
+    <main>
+        <div class="intro">
+            <h1>Which Sanrio character are you?</h1>
+            <p>Have you ever wondered which Sanrio character you are based on your zodiac? Fill in your name and date of birth to find out!</p>
+        </div>
+        <div class="form">
+            <form action="">
+                <label for="name">Name:</label>
+                <input id="name" class="js-name-input"type="text">
+                <br>
+                <label for="date">D.O.B:</label>
+                <input id="date" class="js-date-input" type="date" max="2022">
+                <br>
+                <button class="js-submit-button">Submit</button>
+            </form>
+        </div>
+    </main>
+    <script>
+        const submitButton = document.querySelector('.js-submit-button')
+        const totalContainer = document.querySelector('.js-total-element')
+        const tipContainer = document.querySelector('.js-tip-element')
+        const grandContainer = document.querySelector('.js-grand-element')
+
+        submitButton.addEventListener('click', function(event){
+            event.preventDefault()
+
+            const inputTotal = document.querySelector('.js-bill-total').value
+            const inputPercentage = document.querySelector('.js-percentage-total').value
+
+            const tipAmount = (inputPercentage/100) * inputTotal;
+            
+            const formattedTipAmount = tipAmount.toFixed(2);
+            console.log(formattedTipAmount);
+            
+
+            const grandTotal = (+tipAmount + +inputTotal).toFixed(2);
+            //const formattedGrandTotal = grandTotal.toFixed(2);
+
+            totalContainer.innerHTML= inputTotal;
+            tipContainer.innerHTML= formattedTipAmount;
+            grandContainer.innerHTML= grandTotal;
+ 
+        })
+    </script>
+</body>
+
+</html>
