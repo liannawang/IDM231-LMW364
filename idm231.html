@@ -7,33 +7,51 @@
     <title>Sanrio Zodiac Generator</title>
     <link rel= "stylesheet" href="style.css"/>
     <link rel= "normalize" href="normalize.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
     <nav>
-        <img src="pictures/logo.png" alt="Sanrio Logo" class="logo" width="160" height="50"> 
+        <!--<img src="pictures/hello sanrio.png" alt="Sanrio Logo" class="logo" width="300px" > -->
     </nav>
     <main>
+        <div class="help-button-wrapper">
+            <ul class="help-list">
+              <li><span id="start-tour">Using the calendar input, enter your birthday and then click submit.</span></li>
+              <li><span id="start-tour">Feel free to click on any of the characters to see their descriptions!</span></li>
+              <li>
+                <small class="text-danger">Close Help</small>
+              </li>
+            </ul>
+            <button class="help-button">
+              <span>
+                <img src="pictures/recoloredhelp.png">
+              </span>
+            </button>
+          </div>
+       <!---- <div class="help"><img src="pictures/help.png" class="helpbutton"></div>-->
         <div class="intro">
             <h1>Which Sanrio character are you?</h1>
-            <p>Have you ever wondered which Sanrio character you are based on your zodiac?<br>Fill in your name and date of birth to find out!</p>
-        </div>
-        <div class="form">
-            <form action="">
-                <label for="name">Name:</label>
-                <input id="name" class="js-name-input"type="text">
-                <br>
-                <label for="date">D.O.B:</label>
-                <input id="date" class="js-date-input" type="date" max="2022">
-                <br>
-                <button class="js-submit-button">Submit</button>
-            </form>
-        </div>
-        <div class="js-total-wrapper" style="display: none">
-            <div class="result">
-            <p><span class="js-name-element"></span>, you are <span class="js-result-element"></span>! <span class="js-description-element"></span></p>
-            </div>
+            <p>Have you ever wondered which Sanrio character you are?<br>Fill in your birthday to find out!</p>
         </div>
         
+            <form action="">
+                <!--<label for="name">Name:</label>
+                <input id="name" class="js-name-input"type="text">
+                <br>-->
+                <!--<label for="date">Enter Your Birthday:</label>-->
+                <div class="input-group">
+                    <input id="date" class="js-date-input" type="date" max="2022">
+                    <button class="js-submit-button">Submit</button>
+                </div>
+                
+             
+            </form>
+        <div class="js-total-wrapper" style="display: none">
+            <div class="result">
+            <p><!--<span class="js-name-element"></span>, -->you are <span class="js-result-element"></span>! <span class="js-description-element"></span></p>
+            </div>
+        </div>
+  
     </main>
     <script src="script.js"></script>
 </body>

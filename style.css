@@ -1,40 +1,209 @@
 * {
     box-sizing: border-box;
   }
-
+  *:focus {
+    outline: none;
+  }
   body{
-    background-color: #FFEFEF;
+    background-image: url("pictures/grasscloud.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: #FFFAFF;
     margin:0 auto;
-    padding: 2rem;
     width: 100%;
     text-align: center;
     
   }
   
   @font-face {
-    font-family: 'Allenoire';
-    src: url('fonts/Allenoire\ Font.otf');}
+    font-family: 'PoppinsBold';
+    src: url('fonts/Poppins-Bold.ttf')}
 
   @font-face {
     font-family: 'Rounded';
     src: url('fonts/VAG\ Rounded\ Regular.ttf'); }
 
+    @font-face {
+      font-family: 'Poppins';
+      src: url('fonts/Poppins-Regular.ttf'); }
+
  
     
   h1 {
-    font-family: Allenoire, Georgia, 'Times New Roman', Times, serif;
-    font-size: 28px;
+    font-family: PoppinsBold, Georgia, 'Times New Roman', Times, serif;
+    font-size: 3vw;
     font-weight: 100;
-    /*margin: 0rem auto;*/
-    color: #E2468C;
+    margin: 0rem auto;
+    color: #DC4990;
+  }
+
+  .intro h1{
+    padding-top: 90px;
   }
 
   p {
     font-family: Rounded, Georgia, 'Times New Roman', Times, serif;
-    font-size: 20px;
+    font-size: 1.8vw;
     font-weight: 100;
-    /*margin: 0rem auto;*/
+    padding:16px;
+    margin: 0rem auto;
     color: #2271B9;
   }
+  
+.js-date-input {
+  font-family: Poppins;
+  font-weight: 50;
+  border:none;
+  font-size:1.1vw;
+  line-height: 3rem;
+  border-bottom-left-radius: 41px;
+  border-bottom-right-radius: 41px;
+  border-top-left-radius: 41px;
+  border-top-right-radius: 41px;
+  color:#808080;
+  margin-right:.5rem;
 
+}
+.input-group input {
+  padding: 0 25px;
+}
+
+.js-submit-button {
+  font-family: Poppins;
+  border:none;
+  font-size:1.1vw;
+  line-height: 3rem;
+  border-bottom-left-radius: 41px;
+  border-bottom-right-radius: 41px;
+  border-top-left-radius: 41px;
+  border-top-right-radius: 41px;
+  color:#FFFAFF;
+  background: #DC4990;
+}
+.js-submit-button:hover {
+  box-shadow: 0 14px 44px 0 rgba(0, 0, 0, 0.077);
+  color: white;
+}
+
+.js-submit-button:active {
+  background-color: #E8C7DB;
+  color: white;
+}
+.input-group input:hover {
+  box-shadow: 0 14px 44px 0 rgba(0, 0, 0, 0.077);
+}
+
+.input-group{
+  padding:1rem;
+}
+.input-group button {
+  padding: 0 25px;
+}
+
+.help img {
+  margin-top: 1rem;
+  margin-right: 3rem;
+  float: right;
+  width:50px;
+}
+
+
+.help-button-wrapper {
+  position: fixed;
+  bottom: 2rem;
+  right: 2em;
+  text-align: right;
+}
+
+.help-button {
+  height: 1px;
+
+  background-color:#C5E7F1;
+
+  
+  border: 0 none;
+
+  cursor: pointer;
+  
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+}
+.help-button img {
+  width: 70px;
+}
+
+.help-button:hover,
+.help-button:focus,
+.help-button:active {
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+  outline: 0;
+}
+
+.help-button span {
+  display: block;
+  font-size: 2em;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: -webkit-transform 100ms ease;
+  transition: -webkit-transform 100ms ease;
+  transition: transform 100ms ease;
+  transition: transform 100ms ease, -webkit-transform 100ms ease;
+}
+
+.help-button:hover span,
+.expanded .help-button span,
+.expanded .help-button span {
+  -webkit-transform: scale(1.25);
+  transform: scale(1.25);
+}
+
+.expanded .help-button {
+  -webkit-transform: scale(0.7);
+  transform: scale(0.7);
+  background: #C5E7F1;
+}
+
+.help-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+  -webkit-transform: translate(0, 90px) scale(0.5);
+  transform: translate(0, 90px) scale(0.5);
+  -webkit-transform-origin: bottom center;
+  transform-origin: bottom center;
+  opacity: 0;
+}
+
+.expanded .help-list {
+  -webkit-transform: translate(0px, 20px) scale(1);
+  transform: translate(0px, 20px) scale(1);
+  opacity: 1;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  margin-bottom: 1.5em;
+  margin-right: 1.5em;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px 10px 0 10px;
+}
+
+.help-list li {
+  margin-bottom: 0.7em;
+  color: #464646;
+  font-family: rounded;
+}
+
+.help-list li:last-child {
+  margin-bottom: 0;
+}
+
+.help-list li:hover {
+  cursor: pointer;
+  color: black;
+}
 

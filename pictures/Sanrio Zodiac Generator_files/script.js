@@ -1,30 +1,17 @@
 
 const wrapper = document.querySelector('.js-total-wrapper')
-//const nameContainer = document.querySelector('.js-name-element')
+const nameContainer = document.querySelector('.js-name-element')
 const resultContainer = document.querySelector('.js-result-element')
 const descriptionContainer = document.querySelector('.js-description-element')
 
 const submitButton = document.querySelector('.js-submit-button')
-const help = document.querySelector('.helpbutton')
 
-//help.addEventListener('click',function(event){
- //   alert("Instructions: ejfheqkhfkhqw");
-//})
-$(".help-button").on("click", function() {
-    $(".help-button-wrapper").toggleClass("expanded");
-  });
-  
-  $(document).on("click", function(event) {
-    if (!$(event.target).closest(".help-button").length) {
-      $(".help-button-wrapper").removeClass("expanded");
-    }
-  });
-  
+
 
 submitButton.addEventListener('click', function(event){
     event.preventDefault()
     const dateInput = document.querySelector('.js-date-input').value
-    //const name = document.querySelector('.js-name-input').value
+    const name = document.querySelector('.js-name-input').value
 
     const dt = new Date(dateInput);
 
@@ -123,7 +110,7 @@ submitButton.addEventListener('click', function(event){
             console.log(astro_sign);
             resultContainer.innerHTML = zodiac;
      
-        //nameContainer.innerHTML =  name;
+        nameContainer.innerHTML =  name;
         wrapper.style.display = 'block';
 
         if(astro_sign=="Little Twin Stars (Gemini)"){
