@@ -38,89 +38,104 @@ submitButton.addEventListener('click', function(event){
             if (month == "12"){
                 
                 if (day < 22){
-                astro_sign = "Sagittarius";
+                astro_sign = "Hello Kitty";
                 description = "Djdfk";
                 }else{
-                astro_sign ="capricorn";
+                astro_sign ="Choco Cat";
                 }
                 
             }
                 
             else if (month == 1){
-                if (day < 20)
-                astro_sign = "Capricorn";
-                else
-                astro_sign = "aquarius";
+
+                if (day < 20){
+                astro_sign = "Choco Cat";
+                }else{
+                astro_sign = "Keroppi";
+                }
+
             }
                 
             else if (month == 2){
-                if (day < 19)
-                astro_sign = "Aquarius";
-                else
-                astro_sign = "pisces";
+
+                if (day < 19){
+                astro_sign = "Keroppi";
+            }else{
+                astro_sign = "Cinnamoroll";
+                document.getElementById("x").src="cinna.png"
+            }
 
             }
                 
             else if(month == "3"){
-                if (day < 21)
-                astro_sign = "Pisces";
-                else
-                astro_sign = "Aggretsuko (Aries)";
+
+                if (day < 21){
+                astro_sign = "Cinnamoroll";
+                document.getElementById("x").src="cinna.png"
+            }else{
+                astro_sign = "Aggretsuko";
+                document.getElementById("x").src="aggret.png"
+                description = "This Red Panda is stuck in a frustrating office job that forces her to suppress her natural Arien traits. She vents her frustrations with death metal karaoke.";
             }
+        }
             else if (month == "4"){
-                if (day < 20)
-                astro_sign = "Aggretsuko (Aries)";
-                else
-                astro_sign = "Gudetama (Taurus)";
+                if (day < 20){
+                astro_sign = "Aggretsuko";
+                document.getElementById("x").src="aggret.png"
+                description = "This Red Panda is stuck in a frustrating office job that forces her to suppress her natural Arien traits. She vents her frustrations with death metal karaoke.";
+                }else{
+                astro_sign = "Gudetama";
             }
+        }
                 
             else if (month == "5"){
-                if (day < 21)
-                astro_sign = "Gudetama (Taurus)";
-                else
-                astro_sign = "Little Twin Stars (Gemini)";
+                if (day < 21){
+                astro_sign = "Gudetama";
+                }else{
+                astro_sign = "Little Twin Stars";
             }
+        }
                 
             else if( month == "6"){
                 if (day < 21)
-                astro_sign = "Gemini";
+                astro_sign = "Little Twin Stars";
                 else
-                astro_sign = "Little Twin Stars (Gemini)";
+                astro_sign = "Melody";
             }
                 
             else if (month == "7"){
                 if (day < 23)
-                astro_sign = "Cancer";
+                astro_sign = "Melody";
                 else
-                astro_sign = "leo";
+                astro_sign = "Pocchaco";
             }
                 
             else if( month == "8"){
                 if (day < 23)
-                astro_sign = "Leo";
+                astro_sign = "Pocchaco";
                 else
-                astro_sign = "virgo";
+                astro_sign = "Badtz";
             }
                 
             else if (month == "9"){
                 if (day < 23)
-                astro_sign = "Virgo";
+                astro_sign = "Badtz";
                 else
-                astro_sign = "libra";
+                astro_sign = "Pom Pom Purin";
             }
                 
             else if (month == "10"){
                 if (day < 23)
-                astro_sign = "Libra";
+                astro_sign = "Pom Pom Purin";
                 else
-                astro_sign = "scorpio";
+                astro_sign = "Kuromi";
             }
                 
             else if (month == "11"){
                 if (day < 22)
-                astro_sign = "scorpio";
+                astro_sign = "Kuromi";
                 else
-                astro_sign = "sagittarius";
+                astro_sign = "Hello Kitty";
             }
             const zodiac= astro_sign;
             console.log(astro_sign);

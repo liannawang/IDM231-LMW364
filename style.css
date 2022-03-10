@@ -3,7 +3,7 @@
   }
 
   body{
-    background-image: url("pictures/grasscloud.png");
+    background-image: url("pictures/grasscloud3.png");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -38,7 +38,7 @@
   }
 
   .intro h1{
-    padding-top: 80px;
+    padding-top: 70px;
   }
 
   p {
@@ -110,8 +110,8 @@
 
 .help-button-wrapper {
   position: fixed;
-  bottom: 2rem;
-  right: 2em;
+  bottom: 10rem;
+  right: 4rem;
   text-align: right;
   z-index: 289;
 }
@@ -119,7 +119,7 @@
 .help-button {
   height: 1px;
 
-  background-color:#C5E7F1;
+  background-color:#B8E9EE;
 
   
   border: 0 none;
@@ -163,7 +163,7 @@
 .expanded .help-button {
   -webkit-transform: scale(0.7);
   transform: scale(0.7);
-  background: #C5E7F1;
+  background: #B8E9EE;
 }
 
 .help-list {
@@ -180,6 +180,8 @@
 }
 
 .expanded .help-list {
+  
+  
   -webkit-transform: translate(0px, 20px) scale(1);
   transform: translate(0px, 20px) scale(1);
   opacity: 1;
@@ -206,63 +208,92 @@
   color: black;
 }
 
-        .character {
-            display: grid; 
-            grid-template-columns: repeat(6);
-            grid-template-rows: repeat(2);
-            justify-content: center;
-            align-content: center;
-            background-color: white .4;
-            border-radius: 50px;
-            max-width: 30rem;
+.characters{
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  margin-left: 2rem;
+  bottom: 2rem;
+  width: 100%;
+}
 
-            margin: 10rem 5rem 5rem 5rem;
-            grid-template-areas: 
-                "keroppi cinnamoroll aggretsuko gude twins melody" 
-                "pocha badtz kuromi kitty pom choco";
-        }
-
-      
-        
-        .character_spot {
-            width: 5vw;
-        }
-        .kero {
-            grid-area: keroppi;
-        }
-        .kero {
-            grid-area: cinnamoroll;
-        }
-        .kero {
-            grid-area: aggretsuko;
-        }
-        .kero {
-            grid-area: gude;
-        }
-        .kero {
-            grid-area: twins;
-        }
-        .kero {
-            grid-area: melody;
-        }
-        .kero {
-            grid-area: pocha;
-        }
-        .kero {
-            grid-area: badtz;
-        }
-        .kero {
-            grid-area: kuromi;
-        }
-        .kero {
-            grid-area: pom;
-        }
-        .kero {
-            grid-area: choco;
-        }
+.character_spot {
+    height: 7rem;
+    padding: .5rem;
+} 
 
 .characters img:hover {
 
-    transform: scale(1.25);
+  transform: scale(1.25);
+  
+  } 
 
+
+  .js-total-wrapper{
+    padding-left: 20rem;
+    padding-right: 20rem;
+  }
+
+  .result img{
+    width:6rem;
+  }
+  .result{
+    padding:2rem;
+    background-color:rgba(255, 255, 255, .5);
+    border-radius: 50px;
+  }
+/* .characters {
+    display: grid; 
+    grid-template-columns: repeat(6);
+    grid-template-rows: repeat(2);
+    justify-content: center;
+    align-content: center;
+    background-color: white .4;
+    border-radius: 50px;
+    max-width: 30rem;
+
+    margin: 10rem 5rem 5rem 5rem;
+    grid-template-areas: 
+        "keroppi cinnamoroll aggretsuko gude twins melody" 
+        "pocha badtz kuromi kitty pom choco";
 }
+
+.kero {
+    grid-area: keroppi;
+}
+.kero {
+    grid-area: cinnamoroll;
+}
+.kero {
+    grid-area: aggretsuko;
+}
+.kero {
+    grid-area: gude;
+}
+.kero {
+    grid-area: twins;
+}
+.kero {
+    grid-area: melody;
+}
+.kero {
+    grid-area: pocha;
+}
+.kero {
+    grid-area: badtz;
+}
+.kero {
+    grid-area: kuromi;
+}
+.kero {
+    grid-area: pom;
+}
+.kero {
+    grid-area: choco;
+}
+
+.characters img:hover {
+
+transform: scale(1.25);
+
+} 
