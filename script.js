@@ -34,12 +34,15 @@ submitButton.addEventListener('click', function(event){
     console.log(day);
 
     let astro_sign="";
+    let description="";
             if (month == "12"){
                 
-                if (day < 22)
+                if (day < 22){
                 astro_sign = "Sagittarius";
-                else
+                description = "Djdfk";
+                }else{
                 astro_sign ="capricorn";
+                }
                 
             }
                 
@@ -122,6 +125,7 @@ submitButton.addEventListener('click', function(event){
             const zodiac= astro_sign;
             console.log(astro_sign);
             resultContainer.innerHTML = zodiac;
+            descriptionContainer.innerHTML=description;
      
         //nameContainer.innerHTML =  name;
         wrapper.style.display = 'block';
