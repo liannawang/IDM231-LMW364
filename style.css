@@ -1,54 +1,42 @@
 * {
-    box-sizing: border-box;
-  }
+  box-sizing: border-box;
+}
 
-  body{
-    background-image: url("pictures/grasscloud3.png");
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-color: #FFFAFF;
-    margin:0 auto;
-    width: 100%;
-    text-align: center;
-    
-  }
-  
-  @font-face {
-    font-family: 'PoppinsBold';
-    src: url('fonts/Poppins-Bold.ttf')}
+/* font sources */
+@font-face {
+  font-family: 'PoppinsBold';
+  src: url('fonts/Poppins-Bold.ttf');}
 
-  @font-face {
-    font-family: 'Rounded';
-    src: url('fonts/VAG\ Rounded\ Regular.ttf'); }
+@font-face {
+  font-family: 'Rounded';
+  src: url('fonts/VAG\ Rounded\ Regular.ttf');}
 
-    @font-face {
-      font-family: 'Poppins';
-      src: url('fonts/Poppins-Regular.ttf'); }
+@font-face {
+  font-family: 'Poppins';
+  src: url('fonts/Poppins-Regular.ttf');}
 
- 
-    
-  h1 {
-    font-family: PoppinsBold, Georgia, 'Times New Roman', Times, serif;
-    font-size: 3vw;
-    font-weight: 100;
-    margin: 0rem auto;
-    color: #DC4990;
-  }
 
-  .intro h1{
-    padding-top: 70px;
-  }
+/* fonts */
+h1 {
+  font-family: PoppinsBold, Georgia, 'Times New Roman', Times, serif;
+  font-size: 3vw;
+  font-weight: 100;
+  margin: 0rem auto;
+  color: #DC4990;
+}
 
-  p {
-    font-family: Rounded, Georgia, 'Times New Roman', Times, serif;
-    font-size: 1.8vw;
-    font-weight: 100;
-    padding:16px;
-    margin: 0rem auto;
-    color: #2271B9;
-  }
+.intro h1{
+  padding-top: 70px;
+}
+
+p {
+  font-family: Rounded, Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.8vw;
+  font-weight: 100;
+  padding:16px;
+  margin: 0rem auto;
+  color: #2271B9;
+}
   
 .js-date-input {
   font-family: Poppins;
@@ -64,6 +52,20 @@
   margin-right:.5rem;
 
 }
+
+body{
+  background-image: url("pictures/grasscloud3.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: #FFFAFF;
+  margin:0 auto;
+  width: 100%;
+  text-align: center;
+}
+  
+
 .input-group input {
   padding: 0 25px;
 }
@@ -180,8 +182,6 @@
 }
 
 .expanded .help-list {
-  
-  
   -webkit-transform: translate(0px, 20px) scale(1);
   transform: translate(0px, 20px) scale(1);
   opacity: 1;
@@ -208,7 +208,7 @@
   color: black;
 }
 
-.characters{
+.characters {
   display: flex;
   flex-direction: row;
   position: fixed;
@@ -218,82 +218,36 @@
 }
 
 .character_spot {
-    height: 7rem;
-    padding: .5rem;
+  height: 7.4vw;
+  padding: .5rem;
 } 
 
 .characters img:hover {
-
   transform: scale(1.25);
-  
-  } 
-
-
-  .js-total-wrapper{
-    padding-left: 20rem;
-    padding-right: 20rem;
-  }
-
-  .result img{
-    width:6rem;
-  }
-  .result{
-    padding:2rem;
-    background-color:rgba(255, 255, 255, .5);
-    border-radius: 50px;
-  }
-/* .characters {
-    display: grid; 
-    grid-template-columns: repeat(6);
-    grid-template-rows: repeat(2);
-    justify-content: center;
-    align-content: center;
-    background-color: white .4;
-    border-radius: 50px;
-    max-width: 30rem;
-
-    margin: 10rem 5rem 5rem 5rem;
-    grid-template-areas: 
-        "keroppi cinnamoroll aggretsuko gude twins melody" 
-        "pocha badtz kuromi kitty pom choco";
-}
-
-.kero {
-    grid-area: keroppi;
-}
-.kero {
-    grid-area: cinnamoroll;
-}
-.kero {
-    grid-area: aggretsuko;
-}
-.kero {
-    grid-area: gude;
-}
-.kero {
-    grid-area: twins;
-}
-.kero {
-    grid-area: melody;
-}
-.kero {
-    grid-area: pocha;
-}
-.kero {
-    grid-area: badtz;
-}
-.kero {
-    grid-area: kuromi;
-}
-.kero {
-    grid-area: pom;
-}
-.kero {
-    grid-area: choco;
-}
-
-.characters img:hover {
-
-transform: scale(1.25);
-
 } 
+
+
+.js-total-wrapper{
+  padding-left: 20rem;
+  padding-right: 20rem;
+}
+
+.result img{
+  width:6rem;
+}
+.result{
+  padding:2rem;
+  background-color:rgba(255, 255, 255, .5);
+  border-radius: 50px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.row {
+  display: flex;
+  margin-top: 50px;
+}
+
