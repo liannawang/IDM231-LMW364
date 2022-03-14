@@ -6,6 +6,9 @@ const descriptionContainer = document.querySelector('.js-description-element')
 const submitButton = document.querySelector('.js-submit-button')
 const help = document.querySelector('.helpbutton')
 
+let astro_sign="";
+    let description="";
+    let audio = "";
 
 $(".help-button").on("click", function() {
     $(".help-button-wrapper").toggleClass("expanded");
@@ -21,7 +24,6 @@ $(".help-button").on("click", function() {
 submitButton.addEventListener('click', function(event){
     event.preventDefault()
     const dateInput = document.querySelector('.js-date-input').value
-    //const name = document.querySelector('.js-name-input').value
 
     const dt = new Date(dateInput);
 
@@ -30,9 +32,6 @@ submitButton.addEventListener('click', function(event){
     console.log(month);
     console.log(day);
 
-    let astro_sign="";
-    let description="";
-    let audio = "";
             if (month == "12"){
                 
                 if (day < 22){
@@ -192,17 +191,47 @@ submitButton.addEventListener('click', function(event){
             resultContainer.innerHTML = zodiac;
             descriptionContainer.innerHTML=description;
             audio.play();
-        //nameContainer.innerHTML =  name;
+    
         wrapper.style.display = 'block';
 
+
+        function displayCard(zodiac) {
+            //display card
+            const signCard = document.getElementById(zodiac);
+            signCard.classList.toggle("hidden");
+          
+        }
         
 
 })
 
 document.querySelectorAll('.character_spot').forEach(item => {
     item.addEventListener('click', event => {
-      console.log('hi');
+      const altValue = item.getAttribute("id");
+    zodiac = altValue;
+    console.log(zodiac);
+    getAssets(zodiac);
+    resultContainer.innerHTML = zodiac;
+    wrapper.style.display = 'block';
+    descriptionContainer.innerHTML=description;
+            audio.play();
     })
   })
 
+function getAssets (zodiac){
+    if (zodiac == "Cinnamoroll"){
+        document.getElementById("x").src="cinna.png"
+        audio = new Audio('sounds/bell.mp3');
+        description= "hi i love it here";
+
+    }
+}
+  
+// function displayEverything (){
+//     getAssets(zodiac);
+//     resultContainer.innerHTML = zodiac;
+//     wrapper.style.display = 'block';
+//     descriptionContainer.innerHTML=description;
+//     audio.play();
+// }
    
