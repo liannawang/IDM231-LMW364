@@ -125,7 +125,7 @@ document.querySelectorAll('.character_spot').forEach(item => {
 function getAssets (character){
     if (character == "Hello Kitty"){
         document.getElementById("x").src="pictures/kitty.png"
-        audio = new Audio('sounds/haha.mp3');
+        audio = new Audio('sounds/cutegiggle.mp3');
         description= "she's kind and loves to bake!";
    
     } else if (character == "Choco Cat"){
@@ -155,7 +155,7 @@ function getAssets (character){
    
     } else if (character == "Little Twin Stars"){
         document.getElementById("x").src="pictures/emojis/twin.png"
-        audio = new Audio('sounds/twinkle.mp4');
+        audio = new Audio('sounds/wow.mp3');
         description= "they're artistic and curious!";
     
     } else if (character == "Melody"){

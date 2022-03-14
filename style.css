@@ -30,7 +30,7 @@ body{
 
   
 h1 {
-  font-family: PoppinsBold, Georgia, 'Times New Roman', Times, serif;
+  font-family: PoppinsBold, Arial, Helvetica, sans-serif;
   font-size: 3vw;
   font-weight: 100;
   margin: 0rem auto;
@@ -42,7 +42,7 @@ h1 {
 }
 
 p {
-  font-family: Rounded, Georgia, 'Times New Roman', Times, serif;
+  font-family: Rounded, Arial, Helvetica, sans-serif;
   font-size: 1.8vw;
   font-weight: 100;
   padding:16px;
@@ -51,7 +51,7 @@ p {
 }
 
 .js-date-input {
-font-family: Poppins;
+font-family: Poppins, Arial, Helvetica, sans-serif;
 font-weight: 50;
 border:none;
 font-size:1.1vw;
@@ -69,7 +69,7 @@ padding: 0 25px;
 }
 
 .js-submit-button {
-font-family: Poppins;
+font-family: Poppins, Arial, Helvetica, sans-serif;
 border:none;
 font-size:1.1vw;
 line-height: 3rem;
@@ -196,7 +196,7 @@ border-radius: 10px 10px 0 10px;
 .help-list li {
 margin-bottom: 0.7em;
 color: #464646;
-font-family: rounded;
+font-family: rounded, Arial, Helvetica, sans-serif;
 }
 
 .help-list li:last-child {
