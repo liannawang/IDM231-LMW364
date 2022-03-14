@@ -11,17 +11,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
-    <nav>
-        <!--<img src="pictures/hello sanrio.png" alt="Sanrio Logo" class="logo" width="300px" > -->
-    </nav>
     <main>
         <div class="help-button-wrapper">
             <ul class="help-list">
               <li><span id="start-tour">Using the calendar input, enter your birthday and then click submit.</span></li>
               <li><span id="start-tour"> Feel free to click on any of the characters to see their descriptions!</span></li>
-              <li>
-                <!-- <small class="text-danger">Close Help</small> -->
-              </li>
             </ul>
             <button class="help-button">
               <span>
@@ -29,28 +23,20 @@
               </span>
             </button>
           </div>
-       <!---- <div class="help"><img src="pictures/help.png" class="helpbutton"></div>-->
         <div class="intro">
             <h1>Which Sanrio character are you?</h1>
             <p>Fill in your birthday to find out which Sanrio character you are!</p>
         </div>
-        
-            <form action="">
-                <!--<label for="name">Name:</label>
-                <input id="name" class="js-name-input"type="text">
-                <br>-->
-                <!--<label for="date">Enter Your Birthday:</label>-->
-                <div class="input-group">
-                    <input id="date" class="js-date-input" type="date" max="2022">
-                    <button class="js-submit-button">Submit</button>
-                </div>
-                
-             
-            </form>
+        <form action="">
+            <div class="input-group">
+                <input id="date" class="js-date-input" type="date" max="2022">
+                <button class="js-submit-button">Submit</button>
+            </div>
+        </form>
         <div class="js-total-wrapper" style="display: none">
             <div class="result">
                 <div><img id="x" src="question.jpeg"></div>
-            <p><!--<span class="js-name-element"></span>, -->You are <span class="js-result-element"></span>! <span class="js-description-element"></span></p>
+            <p>You're <span class="js-result-element"></span>- <span class="js-description-element"></span></p>
             </div>
         </div>
 
@@ -63,7 +49,7 @@
             <img class="character_spot" id="Little Twin Stars" src="pictures/little twin stars.png"/>
             <img class="character_spot" id="Melody" src="pictures/melody.png">
             <img class="character_spot" id="Pochacco" src="pictures/pochacco.webp"/>
-            <img class="character_spot" id="Badtz" src="pictures/badtz maru.webp" />
+            <img class="character_spot" id="Badtz Maru" src="pictures/badtz maru.webp" />
             <img class="character_spot" id="Pom Pom Purin" src="pictures/pompompurin.webp"/>
             <img class="character_spot" id="Kuromi" src="pictures/kuromi.png"/>
             <img class="character_spot" id="Hello Kitty" src="pictures/hello kitty.png"/>
